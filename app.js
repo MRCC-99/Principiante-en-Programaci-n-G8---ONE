@@ -6,6 +6,11 @@ function number() {
     if (numberSecret === +userNumber) {
         alert(`Descubriste el número secreto!, el numero era ${numberSecret}`);
     }else{
+        if(+userNumber > numberSecret){
+            alert("Es menor");
+        }else{
+            alert("Es mayor")
+        }
         number();
     }
 }
